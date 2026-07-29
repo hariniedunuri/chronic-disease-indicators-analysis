@@ -2,7 +2,6 @@
 ![Python](https://img.shields.io/badge/Python-pandas%20%7C%20matplotlib-3776AB?logo=python&logoColor=white)
 ![R](https://img.shields.io/badge/R-ggplot2-276DC3?logo=r&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-S3-FF9900?logo=amazonaws&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 # U.S. Chronic Disease Indicators: Smoking, Socioeconomic Status & Health Outcomes
 
