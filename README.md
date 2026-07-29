@@ -84,6 +84,9 @@ numbers directly.)*
 - Pair obesity/diabetes prevention programs with the states showing both high income inequality and low education completion — the co-occurrence, not either factor alone, is where the risk concentrates.
 - Treat insurance-coverage expansion as one lever among several for obesity outcomes, not a standalone fix — the correlation is real but not strong enough to be the whole strategy.
 
+![Income vs Diabetes Prevalence](visualizations/01_income_vs_diabetes.png)
+*States with higher income inequality (Gini index) show higher diabetes prevalence.*
+
 ## Visualizations
 
 Native chart exports in [`visualizations/`](visualizations/):
@@ -113,9 +116,11 @@ SQL (joins, CTEs, aggregation), Python (pandas, matplotlib, seaborn), R (tidyver
 ```
 chronic-disease-indicators-analysis/
 ├── README.md
+├── LICENSE
+├── .gitignore
 ├── data/
 │   ├── raw/            # download instructions (file not committed)
-│   └── cleaned/
+│   └── cleaned/         # populated by scripts/01_clean_data.py once raw data is added
 ├── sql/
 │   ├── 01_create_table.sql
 │   ├── 02_smoking_vs_disease.sql
@@ -125,7 +130,6 @@ chronic-disease-indicators-analysis/
 │   ├── 02_python_eda.py
 │   └── 03_r_analysis.R
 ├── visualizations/
-├── reports/
 └── documentation/
     ├── schema_notes.md
     └── screenshots/
