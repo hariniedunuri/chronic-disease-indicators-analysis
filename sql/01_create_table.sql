@@ -1,0 +1,38 @@
+-- Schema matches the public CDC "U.S. Chronic Disease Indicators (CDI)" CSV export
+-- (34 columns as published at data.cdc.gov / catalog.data.gov)
+
+CREATE TABLE chronic_disease_indicators (
+    YearStart INT,
+    YearEnd INT,
+    LocationAbbr VARCHAR(5),
+    LocationDesc VARCHAR(100),
+    DataSource VARCHAR(50),
+    Topic VARCHAR(100),
+    Question VARCHAR(255),
+    Response VARCHAR(100),
+    DataValueUnit VARCHAR(50),
+    DataValueType VARCHAR(100),
+    DataValue VARCHAR(50),
+    DataValueAlt DECIMAL(10,2),
+    DataValueFootnoteSymbol VARCHAR(10),
+    DatavalueFootnote VARCHAR(255),
+    LowConfidenceLimit DECIMAL(10,2),
+    HighConfidenceLimit DECIMAL(10,2),
+    StratificationCategory1 VARCHAR(50),
+    Stratification1 VARCHAR(50),
+    StratificationCategory2 VARCHAR(50),
+    Stratification2 VARCHAR(50),
+    StratificationCategory3 VARCHAR(50),
+    Stratification3 VARCHAR(50),
+    LocationID INT,
+    TopicID VARCHAR(10),
+    QuestionID VARCHAR(20),
+    DataValueTypeID VARCHAR(10),
+    StratificationCategoryID1 VARCHAR(20),
+    StratificationID1 VARCHAR(20),
+    StratificationCategoryID2 VARCHAR(20),
+    StratificationID2 VARCHAR(20),
+    StratificationCategoryID3 VARCHAR(20),
+    StratificationID3 VARCHAR(20),
+    GeoLocation VARCHAR(100)
+);
